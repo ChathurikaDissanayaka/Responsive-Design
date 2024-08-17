@@ -100,13 +100,16 @@ header,
 }
 
 .container {
-    width: 640px;
+    width: 90%;
+    max-width: 800px;
     margin: 0 auto;
 }
 
 .main-image {
     width: 100%;
-    margin-bottom: 32px;
+    display: block;
+    max-width: 640px;
+    margin: 0 auto 32px;
 }
 
 .section-two-image-container {
@@ -115,7 +118,7 @@ header,
 }
 
 .feature-image {
-    width: 310px;
+    width: 48.8%;
     border-radius: 4.6px;
 }
 
