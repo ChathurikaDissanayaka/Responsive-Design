@@ -5,6 +5,7 @@ body {
 }
 
 /* ----- TYPOGRAPHY ----- */
+
 h1, 
 h3 {
     margin: 0;
@@ -26,12 +27,12 @@ h3 {
 }
 
 p {
-    line-height: 23px;
+    line-height: 1.5;
 }
 
 .subheading {
     display: block;
-    font-size: 1.25rem; /* 20 / 16 = 1.25 */
+    font-size: 1.25rem;
     color: #d0aaff;
 }
 
@@ -115,15 +116,28 @@ header,
 
 .section-two-image-container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
 .feature-image {
-    width: 48.8%;
     border-radius: 4.6px;
+    margin-bottom: 1em;
 }
 
 footer {
     text-align: center;
     color: #5f29a3;
+}
+
+/* ----- MEDIA QUERIES ----- */
+
+@media (min-width: 480px) {
+    .section-two-image-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .feature-image {
+        width: 48.8%;     
+    }
 }
