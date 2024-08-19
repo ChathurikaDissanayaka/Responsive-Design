@@ -195,4 +195,18 @@ ul {
     p {
         font-size: 1.125rem;
     }
+    
+    header .container, 
+    nav ul{
+        display: flex;
+    }
+    
+    nav li {
+        margin-left: 1.25em;
+    }
+    
+    header .container{
+        align-items: center;
+        justify-content: space-between;
+    }
 }
