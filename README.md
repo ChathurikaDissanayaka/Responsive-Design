@@ -1,3 +1,4 @@
 ﻿# Responsive Design
 
-- [NFT Site]()
+- [NFT Site](https://responsive-nft-site-by-s4ch1.netlify.app/)
+- [Scrimbafy.me]()
