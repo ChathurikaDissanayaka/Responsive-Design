@@ -4,10 +4,20 @@ html, body {
     font-family: 'Manrope', sans-serif;
 }
 
+body{
+    margin: 1em;
+}
+
 /* =================
     Article Card 
    ================= */
    
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+}
+
 a:hover, a:focus {
     filter: brightness(0.9);
 }
