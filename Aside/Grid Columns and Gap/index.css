@@ -6,6 +6,7 @@ html, body {
 .grid-container {
     display: grid;
     grid-template-columns: 10em 10em;
+    /* grid-template-columns: 2fr 1fr 1fr 1fr; fr units more responsive */
     /* row-gap: .3em;
     column-gap: .6em; */
     gap: .5em;
