@@ -78,6 +78,11 @@ li {
   list-style: none;
 }
 
+li a {
+  text-decoration: none;
+  color: #000000;
+}
+
 .featured {
   position: relative;
 }
@@ -132,6 +137,97 @@ li {
   padding: 0;
 }
 
+.article-1 {
+  grid-area: article1;
+}
+
+.article-2 {
+  grid-area: article2;
+}
+
+.article-3 {
+  grid-area: article3;
+}
+
+.article-4 {
+  grid-area: article4;
+}
+
+.article-5 {
+  grid-area: article5;
+}
+
+.article-6 {
+  grid-area: article6;
+}
+
+.view-more {
+  margin: 0;
+  text-align: center;
+  margin-bottom: 4em;
+}
+
+.view-more a {
+  color: #000000;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+footer {
+  text-align: center;
+  background: #202020;
+  color: #ececec;
+  margin: 0;
+  padding: 50px 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* About Me Custom Styles */
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.about-me img {
+  width: 182px;
+  margin-right: 2em;
+}
+
+.content-section {
+  padding: 1em;
+}
+
+.posts-heading{
+    text-align: center; 
+    margin-top: 1em;
+}
+
+.recent-posts {
+  display: grid;
+  gap: 1em 0;
+  grid-template-columns: 1em 1fr 1em;
+  grid-template-areas:
+    "........ ........ ........"
+    "........ article1 ........"
+    "........ article2 ........"
+    "........ article3 ........"
+    "........ ........ ........"
+    "........ ........ ........";
+  margin: 0;
+  padding: 0;
+}
+
+.recent-posts div img {
+    width: 100%;
+  }
+
+/* Media */
 @media (min-width: 600px) {
   nav {
     font-size: 1rem;
@@ -187,52 +283,31 @@ li {
   .content-div {
     width: 65%;
   }
+
+  /* About Me */
+
+  .about-me {
+    padding: 4em;
+    flex-direction: row;
+  }
+
+  .content-section {
+    padding: 0 7em;
+  }
+
+  .posts-heading{
+    margin-top: 2em;
 }
 
-.article-1 {
-  grid-area: article1;
-}
+  .recent-posts {
+    gap: 2em;
+    grid-template-columns: 2em repeat(3, 1fr) 2em;
+    grid-template-areas:
+      "........ ........ ........ ........ ........"
+      "........ article1 article2 article3 ........"
+      "........ ........ ........ ........ ........"
+      "........ ........ ........ ........ ........";
+    margin: 0;
+  }
 
-.article-2 {
-  grid-area: article2;
-}
-
-.article-3 {
-  grid-area: article3;
-}
-
-.article-4 {
-  grid-area: article4;
-}
-
-.article-5 {
-  grid-area: article5;
-}
-
-.article-6 {
-  grid-area: article6;
-}
-
-.view-more {
-  margin: 0;
-  text-align: center;
-  margin-bottom: 4em;
-}
-
-.view-more a {
-  color: #000000;
-  font-weight: 700;
-  font-size: 1rem;
-}
-
-footer {
-  text-align: center;
-  background: #202020;
-  color: #ececec;
-  margin: 0;
-  padding: 50px 0;
-}
-
-footer p {
-  margin: 0;
 }
