@@ -12,6 +12,7 @@ body {
 
 body {
   font-family: "Source Sans Pro", sans-serif;
+  color: #151515;
 }
 
 h1,
@@ -203,9 +204,9 @@ footer p {
   padding: 1em;
 }
 
-.posts-heading{
-    text-align: center; 
-    margin-top: 1em;
+.posts-heading {
+  text-align: center;
+  margin-top: 1em;
 }
 
 .recent-posts {
@@ -224,8 +225,18 @@ footer p {
 }
 
 .recent-posts div img {
-    width: 100%;
-  }
+  width: 100%;
+}
+
+/* Journey Custom Styles */
+.hero-image {
+  margin: 0 1em;
+  margin-bottom: 1em;
+}
+
+.hero-image img {
+  width: 100%;
+}
 
 /* Media */
 @media (min-width: 600px) {
@@ -295,9 +306,9 @@ footer p {
     padding: 0 7em;
   }
 
-  .posts-heading{
+  .posts-heading {
     margin-top: 2em;
-}
+  }
 
   .recent-posts {
     gap: 2em;
@@ -310,4 +321,9 @@ footer p {
     margin: 0;
   }
 
+  /* Journey Custom Styles */
+  .hero-image {
+    margin: 0 4em;
+    margin-bottom: 2em;
+  }
 }
