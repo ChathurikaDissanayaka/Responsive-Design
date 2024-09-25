@@ -1,110 +1,125 @@
-*, *::before, *::after {
-    box-sizing: border-box;  
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-html, 
+html,
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
-h1, h2, h3, h4 {
-    font-weight: 700;
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
 }
 
 h1 {
-    font-family: "Roboto", sans-serif;
-    font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
 }
 
 h2 {
-    font-size: 2.5rem;
+  font-size: 2rem;
+  margin: 0;
 }
 
-h3{
-    font-size: 1.5rem;
-    margin: 0.5em 0
+h3 {
+  font-size: 1.5rem;
+  margin: 0.5em 0;
 }
 
 h4 {
-   color: #ECECEC;
-   margin: 0;
+  color: #ececec;
+  margin: 0;
 }
 
-p{
-    font-size: 1rem;
-    font-weight: 400;   
+p {
+  font-size: 0.75rem;
+  font-weight: 400;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em 1em;
-    background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 1em;
 }
 
 .header {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .header img {
-    width: 1.5em;
-    height: 1.5em;
-    padding-right: 0.2em;
+  width: 1.5em;
+  height: 1.5em;
+  padding-right: 0.2em;
 }
 
 nav {
-    font-weight: 600;
-    font-size: 0.8rem;
+  font-weight: 600;
+  font-size: 0.8rem;
 }
 
 ul {
-    display: flex;
-    gap: 1em;
+  display: flex;
+  gap: 1em;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 .featured {
-    background: #000000 url("../images/featured.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 120vh;
-    padding: 4em;
-    padding-top: 25em;
-    color: #ffffff;
+  position: relative;
 }
 
-main {
-     
+.background-div img {
+  width: 100%;
+  height: auto;
 }
 
-.article{
-    width: 100%;
+.content-div {
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  right: 0;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  width: 90%;
 }
 
-.article p{
-    margin: 0;
+.content-div p {
+  margin: 0;
+  width: 100%;
 }
 
-.articles div img{
-    width: 100%;
+.article {
+  width: 100%;
 }
 
-.articles{
-    display: grid;
-    gap: 1em 0;
-    grid-template-columns: 1em 1fr 1em;
-    grid-template-areas: 
+.article p {
+  margin: 0;
+}
+
+.articles div img {
+  width: 100%;
+}
+
+.articles {
+  display: grid;
+  gap: 1em 0;
+  grid-template-columns: 1em 1fr 1em;
+  grid-template-areas:
     "........ ........ ........"
     "........ ........ ........"
     "........ article1 ........"
@@ -113,88 +128,111 @@ main {
     "........ article4 ........"
     "........ article5 ........"
     "........ article6 ........";
-    margin: 0;
+  margin: 0;
+  padding: 0;
 }
 
-@media(min-width: 500px) {
-    .articles{
-        background-color: aqua;
-        gap: 2em;
-        grid-template-columns: 2em repeat(3, 1fr) 2em;
-        grid-template-areas: 
-        "........ ........ ........ ........ ........"
-        "........ ........ ........ ........ ........"
-        "........ article1 article2 article3 ........"
-        "........ ........ ........ ........ ........"
-        "........ article4 article5 article6 ........"
-        "........ ........ ........ ........ ........"
-        "........ ........ ........ ........ ........";
-        margin: 0;
-    }
+@media (min-width: 600px) {
+  nav {
+    font-size: 1rem;
+  }
 
-    nav{
-        font-size: 1rem;
-    }
+  h1 {
+    font-size: 1.25rem;
+  }
 
-    h1{
-        font-size: 1.25rem;
-    }
+  h2 {
+    font-size: 2.5rem;
+  }
 
-    .header img {
-        width: 2em;
-        height: 2em;
-        padding-right: 0.25em;
-    }
+  p {
+    font-size: 1rem;
+  }
 
-    header{
-        padding: 1em 4em;
-    }
+  .content-div {
+    width: 100%;
+  }
+}
+
+@media (min-width: 500px) {
+  .articles {
+    gap: 2em;
+    grid-template-columns: 2em repeat(3, 1fr) 2em;
+    grid-template-areas:
+      "........ ........ ........ ........ ........"
+      "........ ........ ........ ........ ........"
+      "........ article1 article2 article3 ........"
+      "........ ........ ........ ........ ........"
+      "........ article4 article5 article6 ........"
+      "........ ........ ........ ........ ........"
+      "........ ........ ........ ........ ........";
+    margin: 0;
+  }
+
+  .header img {
+    width: 2em;
+    height: 2em;
+    padding-right: 0.25em;
+  }
+
+  header {
+    padding: 1em 4em;
+  }
+
+  .content-div {
+    left: 4em;
+    bottom: 4em;
+  }
+
+  .content-div {
+    width: 65%;
+  }
 }
 
 .article-1 {
-   grid-area: article1; 
+  grid-area: article1;
 }
 
 .article-2 {
-    grid-area: article2; 
+  grid-area: article2;
 }
 
 .article-3 {
-    grid-area: article3; 
+  grid-area: article3;
 }
 
 .article-4 {
-    grid-area: article4; 
+  grid-area: article4;
 }
 
 .article-5 {
-    grid-area: article5; 
+  grid-area: article5;
 }
 
 .article-6 {
-    grid-area: article6; 
+  grid-area: article6;
 }
 
-.view-more{
-    margin: 0;
-    text-align: center;
-    margin-bottom: 4em;
+.view-more {
+  margin: 0;
+  text-align: center;
+  margin-bottom: 4em;
 }
 
-.view-more a{
-    color: #000000;
-    font-weight: 700;
-    font-size: 1rem;
+.view-more a {
+  color: #000000;
+  font-weight: 700;
+  font-size: 1rem;
 }
 
-footer{
-    text-align: center;
-    background: #202020;
-    color: #ECECEC;
-    margin: 0;
-    padding: 50px 0;
+footer {
+  text-align: center;
+  background: #202020;
+  color: #ececec;
+  margin: 0;
+  padding: 50px 0;
 }
 
 footer p {
-    margin: 0;
+  margin: 0;
 }
