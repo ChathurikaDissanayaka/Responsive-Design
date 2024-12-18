@@ -114,6 +114,10 @@ form {
     max-width: 450px;
 }
 
+.main-content p{
+    padding: 0 2em;
+}
+
 /* =================
     Form
    ================= */
